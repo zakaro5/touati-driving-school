@@ -1,111 +1,163 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>مدرسة تعليم السياقة تواتي</title>
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
       background-color: #f9f9f9;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
-    header, footer {
-      background-color: #007BFF;
+
+    header {
+      background-color: #2c3e50;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    nav {
-      background-color: #0056b3;
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 10px;
     }
-    nav a {
+
+    nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    .contact-form input, .contact-form textarea, .contact-form select {
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label, input, textarea, button {
+      margin-bottom: 15px;
+    }
+
+    input, textarea {
       padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
     }
-    .contact-form button {
-      padding: 10px 20px;
-      background-color: #007BFF;
+
+    button {
+      padding: 10px;
+      background-color: #2c3e50;
       color: white;
       border: none;
+      border-radius: 4px;
       cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .info p {
+      margin: 5px 0;
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>مدرسة تعليم السياقة تواتي</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#pricing">الأسعار</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>مدرسة تعليم السياقة تواتي</h1>
-  <p>نرافقك حتى تنجح في الحصول على رخصة السياقة</p>
-</header>
+  <section id="services">
+    <h2>خدماتنا</h2>
+    <ul>
+      <li>حصص تعليم نظري و تطبيقي</li>
+      <li>تحضير لاجتياز رخصة السياقة</li>
+      <li>تدريب على مركبات مزدوجة القيادة</li>
+    </ul>
+  </section>
 
-<nav>
-  <a href="#about">من نحن</a>
-  <a href="#services">خدماتنا</a>
-  <a href="#pricing">الأسعار</a>
-  <a href="#booking">حجز موعد</a>
-  <a href="#contact">اتصل بنا</a>
-</nav>
+  <section id="pricing">
+    <h2>الأسعار</h2>
+    <ul>
+      <li>الحصة الواحدة: 2000 دج</li>
+      <li>باقة كاملة (نظري + تطبيقي): 34000 دج</li>
+      <li>إعادة التدريب: 1500 دج</li>
+      <li>ساعات إضافية: 1500 دج</li>
+    </ul>
+  </section>
 
-<section id="about">
-  <h2>من نحن</h2>
-  <p>مدرسة تواتي لتعليم السياقة توفر لك أفضل تكوين نظري وتطبيقي على يد مدربين محترفين. خبرتنا تتعدى 10 سنوات في مجال التكوين للسياقة.</p>
-</section>
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>
+      نحن مدرسة تواتي لتعليم السياقة بخبرة سنوات نضمن لكم أفضل تكوين للحصول على رخصة سياقة بكل ثقة واحترافية.
+    </p>
+  </section>
 
-<section id="services">
-  <h2>خدماتنا</h2>
-  <ul>
-    <li>دروس نظرية حول قوانين المرور</li>
-    <li>دروس تطبيقية على الطريق</li>
-    <li>تكوين لرخصة السياقة صنف ب فقط</li>
-  </ul>
-</section>
+  <section id="contact">
+    <h2>اتصل بنا</h2>
+    <form action="https://formspree.io/f/xzzggyok" method="POST">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" name="name" required />
 
-<section id="pricing">
-  <h2>الأسعار</h2>
-  <p>رخصة صنف ب: 30000 دج</p>
-</section>
+      <label for="phone">رقم الهاتف:</label>
+      <input type="tel" id="phone" name="phone" required />
 
-<section id="booking">
-  <h2>حجز موعد</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="الاسم الكامل" required>
-    <input type="tel" placeholder="رقم الهاتف" required>
-    <input type="date" required>
-    <select required>
-      <option disabled selected>اختر نوع الرخصة</option>
-      <option>صنف ب</option>
-    </select>
-    <button type="submit">أرسل</button>
-  </form>
-</section>
+      <label for="message">رسالتك:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
 
-<section id="contact">
-  <h2>اتصل بنا</h2>
-  <p>📞 الهاتف: 0540030042</p>
-  <p>📍 العنوان: مقر مدرسة تواتي، حي 200 مسكن، بني مراد 00009، ولاية البليدة</p>
-</section>
+      <button type="submit">أرسل</button>
+    </form>
 
-<footer>
-  <p>© 2025 مدرسة تعليم السياقة تواتي. جميع الحقوق محفوظة.</p>
-</footer>
+    <div class="info">
+      <h3>معلومات الاتصال</h3>
+      <p>📍 العنوان: Beni Mered 00009، GR8X+96 Beni Mered</p>
+      <p>📞 الهاتف: <span dir="ltr">0540 03 00 42</span></p>
+      <p>🕐 ساعات العمل: 08:00 - 17:00</p>
+      <p>🌐 <a href="https://www.google.com/maps/place/Auto+%C3%A9cole+Touati/@36.5159999,2.8242422,14z/data=!4m10!1m2!1z2XYr9ix2LPYqSDYqtmI2KfYqtmKINmE2KfYsdin2YbYqSDYp9mE2KzZhNmD2KfZhNio!3m6!1s0x128fa4c1faadc0d9:0xdcbeb04cb10c5a74!8m2!3d36.5159999!4d2.8242422!15sCiTbdin2YTZgtin2YTYp9mE2KzZhNmD2KfZhNipINin2YTYp9mF2KfYsdmKkgEDZHJpdmVuX3NjaG9vbOABAA!16s%2Fg%2F11q4wb42vp?entry=ttu" target="_blank">موقعنا على Google Maps</a></p>
+    </div>
+  </section>
 
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2025 مدرسة تعليم السياقة تواتي</p>
+  </footer>
 </body>
+
 </html>
